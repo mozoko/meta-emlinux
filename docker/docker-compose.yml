@@ -26,6 +26,8 @@ services:
     configs:
       - source: host_netrc
         target: /home/build/.netrc
+        uid: $host_user_id
+        mode: 0600
 
 configs:
     host_netrc:
